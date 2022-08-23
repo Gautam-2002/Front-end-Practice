@@ -1,0 +1,66 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-between;
+            border: 2px solid black;
+            background-color: cadetblue;
+            align-items: center;
+        }
+
+        .small {
+            border: 2px solid red;
+            width: 25%;
+            display: flex;
+            justify-content: space-around;
+        }
+
+        a {
+            text-decoration: none;
+            color: rgb(255, 255, 255);
+            font-size: 1.2rem;
+        }
+
+        @media screen and (max-width:426px) {
+            nav {
+                display: flex;
+                flex-direction: column;
+                height: 150px;
+                align-items: center;
+                justify-content: space-around;
+            }
+
+            .small {
+                height: 150px;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-around;
+                align-items: center;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="big">
+        <a href="">Home</a>
+        <div class="small">
+            <a href="">about</a>
+            <a href="">contact</a>
+            <a href="">order</a>
+    </nav>
+    </div>
+</body>
+
+</html>

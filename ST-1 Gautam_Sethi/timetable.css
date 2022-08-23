@@ -1,0 +1,37 @@
+h1{
+    text-align: center;
+}
+nav{
+    text-align: center;
+    color: rgb(0, 192, 192);
+}
+a{
+    color: rgb(2, 185, 185);
+}
+table{
+    text-align: center;
+    width: 920px;
+    height: 380px;
+    margin-left: auto;
+    margin-right: auto;
+    border-width: 8px;
+    border-style: outset;
+}
+td{
+    border: 1px solid black;
+    border-style: groove;
+}
+.col-1{
+    width: 18%;
+}
+#lunch{
+    width: 9.09%;
+    text-align: center;
+}
+.lunch{
+    writing-mode: vertical-rl;
+    margin: auto;
+}
+.grey-clr{
+    background-color: rgb(235, 235, 235);
+}

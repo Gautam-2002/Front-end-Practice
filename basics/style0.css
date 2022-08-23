@@ -1,0 +1,44 @@
+h1{
+    color: rgb(199, 85, 14);
+}
+#p1{
+    color: rgba(247, 7, 215, 0.865);
+    
+}
+.para{
+   font-size: x-large; 
+}
+p[class~="para"]{
+    font-family: 'Courier New', monospace;
+}
+input{
+    background-color: yellow;
+    border: dotted;
+}
+input[type="text"]{
+    color: rgb(20, 220, 67);
+}
+input[type="password"]{
+    color: red;
+}
+h1 ~ p{
+    background-color: blueviolet;
+}
+#p1:hover{
+    color: rgb(241, 238, 25);
+}
+tr:first-child{
+    color: rgb(169, 23, 38);
+}
+ul > li:nth-of-type(odd){
+    background-color: cadetblue;
+}
+ul > li:nth-child(even){
+    background-color: burlywood;
+}
+ol > li:nth-of-type(3n+2){
+    background-color: grey;
+}
+/* ol > li:nth-child(2n+2){
+    background-color: blueviolet;
+} */
