@@ -1,3 +1,12 @@
+const a=10;
+function fun(){
+    a=10;
+    console.log(a);
+}
+fun();
+
+
+
 // function fun(x){
 //     x=50;
 //     console.log(`Inside fun : ${x}`);
