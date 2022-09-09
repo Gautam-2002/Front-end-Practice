@@ -8,30 +8,37 @@
     <title>Document</title>
     <style>
         body {
+            background-color: black;
+        }
+
+        .img-div {
             display: flex;
             justify-content: center;
+            flex-direction: column;
             align-items: center;
+            width: 90vw;
+            height: 90vh;
         }
 
         img {
             margin-top: 150px;
             width: 600px;
         }
+
+        .pause {
+            background: rgba(148, 92, 218, 0.352);
+            color: aliceblue;
+        }
     </style>
 </head>
 
-<body bgcolor="black">
-    <img id="image">
-    <script>
-        const arr = ["images/1.jpg", "images/2.jpg", "images/3.jpg", "images/4.jpg", "images/5.jpg", "images/6.jpg", "images/7.jpg"];
-        let img = document.querySelector('#image');
-        let ele = 0;
-        setInterval(() => {
-            img.setAttribute("src", arr[ele]);
-            ele = (ele + 1) % arr.length;
-            console.log(ele);
-        }, 1000);
-    </script>
+<body>
+    <div class="img-div">
+        <img id="image">
+        <button class="pause">PAUSE IMG</button>
+    </div>
+
+    <script src="script.js"></script>
 </body>
 
 </html>
