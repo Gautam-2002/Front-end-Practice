@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            color: aqua;
+            background-color: black;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .mydiv {
+            width: 600px;
+            height: 500px;
+            border: 1px solid yellow;
+            margin-top: 25px;
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="mydiv"> </div>
+    <button class="h1-btn">Add Heading</button>
+    <script>
+        const mydiv = document.querySelector(".mydiv");
+        function addHeading() {
+            const heading = document.createElement("h1");
+            heading.innerText = "kaise ho bhai";
+            mydiv.appendChild(heading);
+        }
+        const btn = document.querySelector(".h1-btn");
+        btn.addEventListener("click", addHeading);
+    </script>
+</body>
+
+</html>
