@@ -33,25 +33,25 @@ function update() {
   if (direction === "right") {
     newx = headx + square;
     newy = heady;
-    if (newx === bwidth - square) {
+    if (newx === bwidth) {
       gameOver = true;
     }
   } else if (direction === "down") {
     newx = headx;
     newy = heady + square;
-    if (newy === bheight - square) {
+    if (newy === bheight) {
       gameOver = true;
     }
   } else if (direction === "left") {
     newx = headx - square;
     newy = heady;
-    if (newx <= 0) {
+    if (newx < 0) {
       gameOver = true;
     }
   } else {
     newx = headx;
     newy = heady - square;
-    if (newy <= 0) {
+    if (newy < 0) {
       gameOver = true;
     }
   }
