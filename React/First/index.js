@@ -11,3 +11,6 @@ let div = document.querySelector('#root')
 
 
 //npx create-react-app test
+
+// babel - it's a compiler which helps to compile jsx
+// webpack - a bundeler
